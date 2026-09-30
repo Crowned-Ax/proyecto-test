@@ -5,7 +5,7 @@ function Greeting({name,apellido}) {
   return <h2>Welcome back, {name} {apellido}</h2>;
 }
 function Greeting2(props) {
-  return <h2>Bienvenidos de nuevo 2, {props.name} {props.apellido}</h2>;
+  return <h2>Bienvenido de nuevo Juan pablo manco :v, dudo si quiera cuando vera este mensaje {props.name} {props.apellido}</h2>;
 }
 function All(props){
   return(
