@@ -7,11 +7,16 @@ function Greeting({name,apellido}) {
 function Greeting2(props) {
   return <h2>Bienvenido de nuevo {props.name} {props.apellido}</h2>;
 }
+
+function Greeting3(props) {
+  return <h2>Bienvenido a las puertas del cielo {props.name} {props.apellido}</h2>;
+}
+
 function All(props){
   return(
     <div>
       <h1>Salut et Au Revoir</h1>
-      <Greeting2 name="Juan" apellido="Olave"/>
+      <Greeting3 name="Juan" apellido="Olave"/>
        <h3>Contador: {props.count}</h3>
       <button onClick={props.accion}>
         Sumar
@@ -22,7 +27,7 @@ function All(props){
 
 function App() {
   const vari = "ggg"
-  const [count, setCount] = useStat(0)
+  const [count, setCount] = useState(0)
   function accion() {
     let temp = count + 1;
     console.log(temp);
