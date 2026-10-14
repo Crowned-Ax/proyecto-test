@@ -27,7 +27,7 @@ function All(props){
 
 function App() {
   const vari = "ggg"
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useStat(0)
   function accion() {
     let temp = count + 1;
     console.log(temp);
